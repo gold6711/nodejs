@@ -7,10 +7,10 @@ var log = require('libs/log')(module);
 var app = express();
 
 app.engine('ejs', require('ejs-locals')); // layout partial block
-app.set('views', __dirname + '/template'); // e:/444/template/layout/page.ejs  //// __dirname + '/template'
+app.set('views', __dirname + '/template');
 app.set('view engine', 'ejs');
 
-app.use(express.favicon()); // /favicon.ico
+//app.use(express.favicon()); // /favicon.ico
 if (app.get('env') == 'development') {
   app.use(express.logger('dev'));
 } else {
