@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>table</title>
+<% layout('/444/template/layout/page') -%>
+
+<% block('title', 'ТАБЛИЦА') -%>
     <style>
         table {border: 1px solid grey;}
         th {border: 1px solid grey;}
@@ -15,10 +13,7 @@
 
         }
     </style>
-</head>
-<body>
 
-<p style="text-align: center; color: black; "><b>ТАБЛИЦА</b></p>
 <table>
     <tr><th>Проблема</th><th>Проблема</th><th>Оценка</th></tr>
     <tr><td>данные</td><td>данные</td><td>данные</td></tr>

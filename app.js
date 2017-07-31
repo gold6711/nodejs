@@ -29,6 +29,12 @@ app.get('/', function(req, res, next) {
   });
 });
 
+app.get('/table', function(req, res, next) {
+  res.render("table", {
+
+  });
+});
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 
